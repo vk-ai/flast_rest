@@ -1,0 +1,15 @@
+### Flask.Python Stack ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+### Flask ###
+instance/*
+!instance/.gitignore
+.webassets-cache
+.env
+
+# Environments
+flask_rest/
+
+# VisualStudioCode
+.DS_Store
