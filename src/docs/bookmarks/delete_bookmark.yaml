@@ -1,0 +1,16 @@
+Delete Bookmark by ID
+---
+tags:
+  - Bookmarks
+parameters:
+  - in: path
+    name: id
+    type: integer
+    required: true
+    description: Specify bookmark id to delete.
+responses:
+  201:
+    description: Deleted the bookmark details created by the user
+
+  400:
+    description: Fails to delete bookmark details due to bad request data

@@ -1,0 +1,28 @@
+Create Bookmarks
+---
+tags:
+  - Bookmarks
+parameters:
+  - in: body
+    name: body
+    required: true
+    description: Specify URL.
+    schema:
+      type: object
+      required:
+        - "url"
+        - "body"
+      properties:
+        url:
+          type: "string"
+          example: "www.xyz.com"
+        body:
+          type: "string"
+          format: body
+          example: "Brief description"
+responses:
+  201:
+    description: Create the bookmark
+
+  400:
+    description: Fails to create bookmarks due to bad request data

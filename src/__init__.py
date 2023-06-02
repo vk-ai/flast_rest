@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import os
 # Absolute Import
 from src.auth import auth
@@ -19,7 +19,7 @@ def create_app(test_config=None):
             JWT_SECRET_KEY=os.environ.get("JWT_SECRET_KEY"),
             SWAGGER={
                 "title": "Bookmarks API",
-                "uiversion": 3 
+                "uiversion": 3
             }
         )
     else:

@@ -1,0 +1,33 @@
+Update Bookmarks
+---
+tags:
+  - Bookmarks
+parameters:
+  - in: body
+    name: body
+    required: true
+    description: Specify URL.
+    schema:
+      type: object
+      required:
+        - "url"
+        - "body"
+      properties:
+        url:
+          type: "string"
+          example: "http://www.xyz.com"
+        body:
+          type: "string"
+          format: body
+          example: "Brief description"
+  - in: path
+    name: id
+    type: integer
+    required: true
+    description: Specify bookmark id.
+responses:
+  201:
+    description: Update the bookmark
+
+  400:
+    description: Fails to update bookmarks due to bad request data

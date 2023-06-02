@@ -1,0 +1,21 @@
+List Bookarks
+---
+tags:
+  - Bookmarks
+parameters:
+  - in: query
+    name: page
+    type: integer
+    required: false
+    description: Specify Page number.
+  - in: query
+    name: per_page
+    type: integer
+    required: false
+    description: Specify per page number of bookmarks.
+responses:
+  201:
+    description: List the bookmarks created by the user
+
+  400:
+    description: Fails to get bookmarks due to bad request data

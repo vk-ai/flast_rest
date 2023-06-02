@@ -1,0 +1,16 @@
+Get Bookmark by ID
+---
+tags:
+  - Bookmarks
+parameters:
+  - in: path
+    name: id
+    type: integer
+    required: true
+    description: Specify bookmark id.
+responses:
+  201:
+    description: Get the bookmark details created by the user
+
+  400:
+    description: Fails to get bookmark details due to bad request data

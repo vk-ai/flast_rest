@@ -4,12 +4,11 @@ template = {
         "title": "Bookmarks API",
         "description": "API for bookmarks",
         "contact": {
-            "responsibleOrganization": "",
-            "responsibleDeveloper": "",
-            "email": "deve@gmail.com",
-            "url": "www.twitter.com/deve",
+            "responsibleOrganization": "Viking",
+            "responsibleDeveloper": "Vinay Kumar K M",
+            "email": "vik@gmail.com",
         },
-        "termsOfService": "www.twitter.com/deve",
+        "termsOfService": "www.twitter.com/vik",
         "version": "1.0"
     },
     "basePath": "/api/v1",  # base bash for blueprint registration
@@ -25,6 +24,11 @@ template = {
             "description": "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\""
         }
     },
+    "security": [
+        {
+            "Bearer": []
+        }
+    ]
 }
 
 swagger_config = {
