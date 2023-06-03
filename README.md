@@ -24,3 +24,7 @@ Features
 4. source <virtual-environment-name>/bin/activate (Ex: source env/bin/activate)
 5. pip install -r requirements.txt
 6. Run command flask run
+
+## How to run the application using docker
+1. docker build -t flask-app .
+2. docker run -it -p 3000:3000 -d flask-app
