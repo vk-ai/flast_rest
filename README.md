@@ -16,3 +16,11 @@ Features
 10. CRUD operations
 11. Flask API error handling
 12. Swagger Documentation
+
+## How to run the application
+1. Git clone
+2. pip install virtualenv
+3. python<version> -m venv <virtual-environment-name> (Ex: python3.8 -m venv env)
+4. source <virtual-environment-name>/bin/activate (Ex: source env/bin/activate)
+5. pip install -r requirements.txt
+6. Run command flask run
