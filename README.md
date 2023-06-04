@@ -3,7 +3,7 @@
 Features
 
 1. Folder Structure
-2. Tests (Pending)
+2. Tests (Pytest and coverage)
 3. Blueprints
     Blueprints helps to create different modules that then we can register with our main Flask App so we can keep our application modular
 
@@ -24,6 +24,11 @@ Features
 4. source <virtual-environment-name>/bin/activate (Ex: source env/bin/activate)
 5. pip install -r requirements.txt
 6. Run command flask run
+
+## Run Test
+1. pytests
+2. coverage run -m pytest
+3. coverage report
 
 ## How to run the application using docker
 1. docker build -t flask-app .
